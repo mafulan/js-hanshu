@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var a=1;   //1、函数内外都声明有a变量
+    // function fn1(){ 
+    //     alert(a); 
+    //     var a = 2; 
+    // }
+    // fn1();
+    // alert(a);
+    // var a=1;   //2、全局声明a变量，函数未声明a变量
+    // function fn1(){ 
+    //     alert(a); 
+    //     a = 2; 
+    // }
+    // fn1();
+    // alert(a);
+    // var a=1;   //3、全局声明a变量，函数有a形参
+    // function fn1(a){  //var a
+    //     alert(a); 
+    //     a = 2; 
+    // } 
+    // fn1();
+    // alert(a);
+    var a=1;   //4、全局声明a变量，函数未声明a变量，调用有a实参
+    function fn1(){ 
+        alert(a); 
+        a = 2; 
+    }
+    fn1(a);
+    alert(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // fn1(); 可以正常调用，用function声明的函数被提升了
+    // fn2(); 报错，函数表达式赋值之前它的值为undefined
+    function fn1(){
+        //函数的声明
+    }
+    var fn2 = function (){
+        //函数表达式
+    }
+    // fn1(); 
+    // fn2();
+    // 在后面调用没有区别，所以多人项目用函数表达式更多，可以防止变量冲突
+    document.onclick = fn1;
+    document.onmouseover = fn2;
+    </script>
+</body>
+</html>
